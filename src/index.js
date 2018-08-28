@@ -42,7 +42,7 @@ const styles = {
 
   pagination_x: {
     position: 'absolute',
-    bottom: 25,
+    bottom: -12,
     left: 0,
     right: 0,
     flexDirection: 'row',
@@ -91,7 +91,8 @@ const styles = {
 
   buttonText: {
     fontSize: 50,
-    color: '#007aff'
+    color: '#007aff',
+    fontFamily: 'Arial'
   }
 }
 
@@ -524,24 +525,24 @@ export default class extends Component {
 
     let dots = []
     const ActiveDot = this.props.activeDot || <View style={[{
-      backgroundColor: this.props.activeDotColor || '#007aff',
-      width: 8,
-      height: 8,
-      borderRadius: 4,
-      marginLeft: 3,
-      marginRight: 3,
-      marginTop: 3,
-      marginBottom: 3
+      backgroundColor: '#E03663',
+      width: 4,
+      height: 4,
+      borderRadius: 3,
+      marginLeft: 2,
+      marginRight: 2,
+      marginTop: 2,
+      marginBottom: 2
     }, this.props.activeDotStyle]} />
     const Dot = this.props.dot || <View style={[{
-      backgroundColor: this.props.dotColor || 'rgba(0,0,0,.2)',
-      width: 8,
-      height: 8,
-      borderRadius: 4,
-      marginLeft: 3,
-      marginRight: 3,
-      marginTop: 3,
-      marginBottom: 3
+      backgroundColor: '#F283A1',
+      width: 4,
+      height: 4,
+      borderRadius: 3,
+      marginLeft: 2,
+      marginRight: 2,
+      marginTop: 2,
+      marginBottom: 2
     }, this.props.dotStyle ]} />
     for (let i = 0; i < this.state.total; i++) {
       dots.push(i === this.state.index
