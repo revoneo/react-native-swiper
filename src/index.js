@@ -42,7 +42,7 @@ const styles = {
 
   pagination_x: {
     position: 'absolute',
-    bottom: -12,
+    bottom: 0,
     left: 0,
     right: 0,
     flexDirection: 'row',
